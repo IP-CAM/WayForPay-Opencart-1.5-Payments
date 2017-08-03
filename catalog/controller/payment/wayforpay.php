@@ -55,7 +55,7 @@ class ControllerPaymentWayforpay extends Controller
 
         $fields['productName'] = $productNames;
         $fields['productPrice'] = $productPrices;
-        $fields['productCount'] = $productQty;
+        $fields['productCount'] = intval($productQty);
 
         /**
          * Check phone
