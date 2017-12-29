@@ -50,12 +50,12 @@ class ControllerPaymentWayforpay extends Controller
                 $order['currency_value'],
                 false
             ), 2);
-            $productQty[] = $product['quantity'];
+            $productQty[] = intval($product['quantity']);
         }
 
         $fields['productName'] = $productNames;
         $fields['productPrice'] = $productPrices;
-        $fields['productCount'] = intval($productQty);
+        $fields['productCount'] = $productQty;
 
         /**
          * Check phone
