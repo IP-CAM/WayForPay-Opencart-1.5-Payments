@@ -330,7 +330,10 @@ class WayForPay
             return $response['reason'];
         }
         $sign = $this->getResponseSignature($response);
-        if ($sign != $response['merchantSignature']) {
+        if (
+            isset($response['merchantSignature']) &&
+            $sign != $response['merchantSignature']
+        ) {
             return 'An error has occurred during payment';
         }
 
@@ -341,6 +344,10 @@ class WayForPay
             return true;
         }
 
+        if ($response['transactionStatus'] == 'InProcessing') {
+            return 'Transaction in processing';
+        }
+        
         return false;
     }
 
