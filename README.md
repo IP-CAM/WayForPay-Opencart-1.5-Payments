@@ -1,16 +1,16 @@
-#Модуль WayForPay для CMS Opencart 1.5-1.6
+# Module WayForPay for CMS OpenCart 1.5-1.6
 ======
 
-#Установка
+# Installation
 
->1. Скопировать папки admin и catalog в корень сайта
->2. Зайти в админку сайта
->3. Выбрать меню "Дополнения" -> "Оплата"
->4. В списке оплат найти способ "WayForPay"
->5. Нажать кнопку "Установить"
->6. Нажать кнопку "Изменить"
->7. Заполнить необходимые поля и сохранить изменения
+> 1. Copy Admin and Catalog folders in the site root
+> 2. Go to the administration of the site
+> 3. Select the "Add-on" menu -> "Payment"
+> 4. In the list of payments to find the way "WayForpay"
+> 5. Press the "Install" button
+> 6. Press the "Edit" button
+> 7. Fill out the necessary fields and save changes
 
-Return Url : http://{домен сайта}/index.php?route=payment/wayforpay/response
+Return URL: http: // {site domain} /index.php?Route=Payment/wayForPay/Response
 
-Service Url : http://{домен сайта}/index.php?route=payment/wayforpay/callback
+Service URL: http: // {site domain} /index.php?Route=Payment/wayForPay/callback
