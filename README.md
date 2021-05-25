@@ -1,4 +1,4 @@
-# Module WayForPay for CMS OpenCart 1.5-1.6
+# Module WayForPay for CMS OpenCart 1.5.x
 ======
 
 # Installation
